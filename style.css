@@ -467,130 +467,35 @@ nav .minimized_menu{
  * 4) Home Sections
  */
 
+.content_image{
+    display: none;
+}
 .content_section{
     margin: 0 auto;
     max-width: 1400px;
-    height: 430px;
+    min-height: 430px;
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
 
 .content_inner{
     padding: 10px;
-    height: 370px;
-    width: 550px;
+    min-height: 370px;
     background-color: #ffd;
     text-align: center;
 }
-
-.content_section:nth-child(odd){
-    background-position: left;
-}
-
-.content_section:nth-child(odd) .content_inner{
-    float: right;
-    padding: 30px;
-    padding-right: 220px;
-    padding-left: 80px;
-}
-
-.content_section:nth-child(even){
-    background-position: right;
-}
-
-.content_section:nth-child(even) .content_inner{
-    float: left;
-    padding: 30px;
-    padding-right: 80px;
-    padding-left: 220px;
-}
-
-.content_image{
-    display: none;
-}
-
 /**** Home Section Queries ****/
 
-@media (max-width: 1200px){
-    .content_inner{
-        width: 400px;
-    }
-    .content_title{
-        font-size: 300%;
-        margin: 10px;
-    }
-}
-
-@media (max-width: 1065px){
-    .content_inner{
-        width: 300px;
-        height: 360px;
-    }
-
-    .content_section{
-        height: 420px;
-    }
-
-    .content{
-        font-size: 100%;
-    }
-}
-
-@media (max-width: 930px){
-    .content_section:nth-child(odd) .content_inner,
-    .content_section:nth-child(even) .content_inner{
-        float: none;
-        padding: 0;
-        padding: 30px 10%;
-        width: 80%;
-        text-align: left;
-    }
-
-    .content{
-        display: inline;
-    }
-
-    .content_image{
+@media (max-width: 767px){
+  .content_image{
         width: 200px;
         display: inline-block;
         float: left;
         margin: 10px;
     }
-}
 
-@media (max-width: 660px){
-    .content_section{
-        height: 450px;
-    }
-
-    .content_inner{
-        height: 450px;
-    }
-}
-
-@media (max-width: 470px){
-    .content_section{
-        height: 550px
-    }
-    .content_inner{
-        height: 550px;
-    }
-    .content_image{
-        display: block;
-        float: none;
-        margin: 15px auto;
-    }
-}
-}
-@media (max-width: 400px){
-  .content_section{
-    	height: 650px;
-  }
-  .content_inner{
-    height: 650px;
-  }
-      .content_image{
-        width: 200px;
+  .desktop-image{
+    display: none;
   }
 }
 
